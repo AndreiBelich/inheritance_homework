@@ -6,6 +6,10 @@ class User{
     this.surname = surname;
   }
 
+  /**
+   * Return full name user
+   * @returns string
+   */
   getFullName(){
     return `${this.name} ${this.surname}`;
   }
@@ -17,6 +21,10 @@ class Student extends User{
     this.year = year;
   }
 
+  /**
+   * Return student course
+   * @returns number
+   */
   getCourse(){
     const currentYear = new Date().getFullYear();
     const course = currentYear - this.year + 1;
